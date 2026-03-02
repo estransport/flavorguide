@@ -42,7 +42,8 @@ body { margin: 0; font-family: 'Montserrat', Arial, sans-serif; background: var(
 .pricing-section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; font-weight: 800; color: var(--dark); margin: 0 0 10px; }
 .pricing-intro { font-size: 0.92rem; color: #666; max-width: 520px; margin: 0 auto 50px; line-height: 1.75; font-weight: 500; }
 
-.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto 60px; align-items: start; }
+.pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1040px; margin: 0 auto 60px; align-items: start; }
+@media (max-width: 900px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); max-width: 600px; } }
 @media (max-width: 760px) { .pricing-grid { grid-template-columns: 1fr; max-width: 420px; } }
 
 .pricing-card { background: var(--cream); border-radius: 16px; padding: 36px 28px 32px; border: 1.5px solid #eef0f4; text-align: left; position: relative; transition: transform 0.25s ease, box-shadow 0.25s ease; }
@@ -187,6 +188,26 @@ footer a:hover { color: white; }
         <button class="pricing-cta" onclick="document.getElementById('how-to-apply').scrollIntoView({behavior:'smooth'})">Get Started →</button>
       </div>
 
+      <!-- Growth -->
+      <div class="pricing-card">
+        <div class="pricing-tier-label">Growth</div>
+        <h3>3 Months</h3>
+        <div class="pricing-duration">Build momentum over a season</div>
+        <div class="pricing-price">
+          <span class="price-dollar">$</span>
+          <span class="price-amount">59</span>
+          <span class="price-sub">/ 3 months</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Everything in Introductory</li>
+          <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>3 full months of visibility</li>
+          <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Priority placement in category</li>
+          <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Save ~$28 vs monthly rate</li>
+          <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Only ~$19.67/month</li>
+        </ul>
+        <button class="pricing-cta" onclick="document.getElementById('how-to-apply').scrollIntoView({behavior:'smooth'})">Get Started →</button>
+      </div>
+
       <!-- Standard (featured) -->
       <div class="pricing-card pricing-card--featured">
         <div class="best-value-badge">⭐ Most Popular</div>
@@ -254,22 +275,9 @@ footer a:hover { color: white; }
       <div class="subject-box">
         <span class="subject-box-label">Use this subject line</span>
         Flavor Guide — Partners — [Package Name]
-        <span class="subject-box-example">e.g. &nbsp;"Flavor Guide — Partners — Standard"</span>
-      </div>
+        <span class="subject-box-example">e.g. &nbsp;"Flavor Guide — Partners — Standard" to ecs3705@gmail.com</span>
+   
 
-      <div class="email-cta">
-        <div class="email-cta-left">
-          <span class="email-label">Send your email to</span>
-          <span class="email-address">ecs3705@gmail.com</span>
-        </div>
-        <a class="email-btn" href="mailto:ecs3705@gmail.com?subject=Flavor Guide — Partners — [Package Name]">Open Email App →</a>
-      </div>
-
-      <div class="webmail-note">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <span class="webmail-note-text">
-          Don't have an email app? Open <a href="https://mail.google.com/mail/?view=cm&to=ecs3705@gmail.com&su=Flavor Guide — Partners — [Package Name]" target="_blank">Gmail</a> or <a href="https://compose.mail.yahoo.com/?to=ecs3705@gmail.com&subject=Flavor Guide — Partners — [Package Name]" target="_blank">Yahoo Mail</a> in your browser. Send to <strong>ecs3705@gmail.com</strong> with the subject line above — just replace <strong>[Package Name]</strong> with Introductory, Standard, or Premier.
-        </span>
       </div>
     </div>
 
@@ -331,15 +339,4 @@ footer a:hover { color: white; }
         <span class="footer-divider">|</span>
         <a href="https://estransport.github.io/flavorguide/index.html">Flavor Guide of Houston</a>
         <span class="footer-divider">|</span>
-        <a href="https://estransport.github.io/flavorguide/partner.html">Partners</a>
-        <span class="footer-divider">|</span>
-        <a href="https://estransport.github.io/flavorguide/advertise.html">Advertise With Us</a>
-      </div>
-      <div>© 2026 ES Transportation &amp; Courier Services · Houston, TX</div>
-    </div>
-  </div>
-</footer>
-
-
-</body>
-</html>
+        <a href="https://estransport.g
